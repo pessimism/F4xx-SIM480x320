@@ -1728,7 +1728,7 @@
 || TRONXY_PROJ == PROJ_VEHO800_2E
 #define Z_PROBE_FEEDRATE_FAST (30*60)
 #else
-#define Z_PROBE_FEEDRATE_FAST (8*60)
+#define Z_PROBE_FEEDRATE_FAST (4*60)
 #endif
 
 // Feedrate (mm/min) for the "accurate" probe of each point
@@ -1743,7 +1743,7 @@
 || TRONXY_PROJ == PROJ_VEHO800_2E
 #define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 10)
 #else
-#define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 2)
+#define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 20)
 #endif
 
 /**
@@ -1791,8 +1791,8 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-//#define MULTIPLE_PROBING 2
-//#define EXTRA_PROBING    1
+#define MULTIPLE_PROBING 5
+#define EXTRA_PROBING    2
 
 /**
  * Z probes require clearance when deploying, stowing, and moving between

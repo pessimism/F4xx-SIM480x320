@@ -218,7 +218,7 @@
 #define DUAL_ZMAX_HOME            0 //大端复位,向反方向复位,再回到正方向找0点
 #define Z_BED_MOVE                1 //Z轴移动:热床
 #define EXTRUDERS                 1 //挤出机数量
-#define INVERT_E0_DIR             true //TITAN:true;BMG:false
+#define INVERT_E0_DIR             false //TITAN:true;BMG:false
 #define USE_EXTRUDER              2 //T,B TITAN:1,BMG:2,TAOLI:3,general:4
 #define FIX_MOUNTED_PROBE
 

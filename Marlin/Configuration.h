@@ -1299,7 +1299,7 @@
 #elif TRONXY_PROJ== PROJ_K1M
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 106.85, 53.33, 266.67, 362.0 }
 #else
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.0, 160.0, 800.0, 766.22 } //xy 32细分 20齿周长为20*2=40mm 740->764 T挤出机8.37758mm/周(进料齿轮d=8mm,电机齿22,挤出机带动齿66,32细分)
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.0, 160.0, 800.0, 815.3 } //xy 32细分 20齿周长为20*2=40mm 740->764 T挤出机8.37758mm/周(进料齿轮d=8mm,电机齿22,挤出机带动齿66,32细分)
 #endif
 
 /**

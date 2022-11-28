@@ -728,9 +728,9 @@
     #define DEFAULT_Ki_LIST {   1.65,   1.65 } //1.08
     #define DEFAULT_Kd_LIST { 108.83, 108.83 } //114.00
   #else
-    #define DEFAULT_Kp  22.54
-    #define DEFAULT_Ki   1.65
-    #define DEFAULT_Kd  108.83
+#define DEFAULT_Kp 19.94
+#define DEFAULT_Ki 1.58
+#define DEFAULT_Kd 63.01
   #endif
 #endif
 
@@ -795,7 +795,7 @@
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  * @section bed temp
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -813,9 +813,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 10.00
-  #define DEFAULT_bedKi .023
-  #define DEFAULT_bedKd 305.4
+  #define DEFAULT_bedKp 136.63
+  #define DEFAULT_bedKi 25.49
+  #define DEFAULT_bedKd 488.23
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED

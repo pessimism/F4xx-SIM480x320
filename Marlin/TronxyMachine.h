@@ -34,7 +34,7 @@
 #define UI_SIM480X320      2
 
 #define TRONXY_PROJ        PROJ_X5SA_PRO
-#define TRONXY_UI          UI_SIM480X320
+#define TRONXY_UI          UI_MARLIN_DEFAULT
 
 #if TRONXY_UI > 0
 #define HAS_TRONXY_UI      1
@@ -219,7 +219,7 @@
 #define Z_BED_MOVE                1 //Z轴移动:热床
 #define EXTRUDERS                 1 //挤出机数量
 #define INVERT_E0_DIR             true //TITAN:true;BMG:false
-#define USE_EXTRUDER              1 //T,B TITAN:1,BMG:2,TAOLI:3,general:4
+#define USE_EXTRUDER              2 //T,B TITAN:1,BMG:2,TAOLI:3,general:4
 #define FIX_MOUNTED_PROBE
 
 #elif TRONXY_PROJ == PROJ_X5SA400_PRO

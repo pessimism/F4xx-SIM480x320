@@ -1728,7 +1728,7 @@
 || TRONXY_PROJ == PROJ_VEHO800_2E
 #define Z_PROBE_FEEDRATE_FAST (30*60)
 #else
-#define Z_PROBE_FEEDRATE_FAST (4*60)
+#define Z_PROBE_FEEDRATE_FAST (6*60)
 #endif
 
 // Feedrate (mm/min) for the "accurate" probe of each point
@@ -1743,7 +1743,7 @@
 || TRONXY_PROJ == PROJ_VEHO800_2E
 #define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 10)
 #else
-#define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 20)
+#define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 4)
 #endif
 
 /**
